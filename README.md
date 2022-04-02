@@ -65,4 +65,8 @@ networks:
   lsky-net:
 ```
 
-原项目：[☁️兰空图床(Lsky Pro) - Your photo album on the cloud.](https://github.com/lsky-org/lsky-pro)
+原项目：
+
+[☁️兰空图床(Lsky Pro) - Your photo album on the cloud.](https://github.com/lsky-org/lsky-pro) 
+
+[☁️lsky-pro-docker-Lsky-Pro Docker镜像](https://github.com/HalcyonAzure/lsky-pro-docker)
