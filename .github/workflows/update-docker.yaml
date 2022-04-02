@@ -24,24 +24,24 @@ jobs:
           timezoneMacos: "Asia/Shanghai"
           timezoneWindows: "China Standard Time"
 
-      - name: Download and Unzip Upstream Source Code
-        run: |
-          curl -OL https://github.com/lsky-org/lsky-pro/archive/refs/heads/master.zip
-          unzip *.zip
-          mv ./lsky-pro-master/* ./
-          mv ./lsky-pro-master/.env.example ./
-          rm -rf master.zip lsky-pro-master
+      # - name: Download and Unzip Upstream Source Code
+      #   run: |
+      #     curl -OL https://github.com/lsky-org/lsky-pro/archive/refs/heads/master.zip
+      #     unzip *.zip
+      #     mv ./lsky-pro-master/* ./
+      #     mv ./lsky-pro-master/.env.example ./
+      #     rm -rf master.zip lsky-pro-master
 
-      - name: Setup PHP Action
-      - uses: shivammathur/setup-php@2.18.0
-        with:
-          php-version: "8.1"
+      # - name: Setup PHP Action
+      # - uses: shivammathur/setup-php@2.18.0
+      #   with:
+      #     php-version: "8.1"
 
-      - name: Copy .env
-        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+      # - name: Copy .env
+      #   run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
-      - name: Install Dependencies
-        run: composer install
+      # - name: Install Dependencies
+      #   run: composer install
 
       # - name: Docker meta
       #   id: meta
