@@ -17,12 +17,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set time zone
-        uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "Asia/Shanghai"
-          timezoneMacos: "Asia/Shanghai"
-          timezoneWindows: "China Standard Time"
+      # - name: Set time zone
+      #   uses: szenius/set-timezone@v1.0
+      #   with:
+      #     timezoneLinux: "Asia/Shanghai"
+      #     timezoneMacos: "Asia/Shanghai"
+      #     timezoneWindows: "China Standard Time"
 
       # - name: Download and Unzip Upstream Source Code
       #   run: |
